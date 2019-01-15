@@ -1,0 +1,8 @@
+@mixin clearfix {
+    &::after {
+        //so basically a empty table after each float element appears automatically 
+        content: ""; //otherwise it will not appear 
+        display: table; //usually table is used 
+        clear: both; //important property cleares the float left and right
+    }
+}
