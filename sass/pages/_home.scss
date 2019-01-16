@@ -1,0 +1,6 @@
+.section-about {
+    background-color:  $color-grey-light-1;
+    padding: 25rem 0;
+    //since the header is not a square and we dont want a gap inbetween, me move the section up
+    margin-top: -20vh;
+}
