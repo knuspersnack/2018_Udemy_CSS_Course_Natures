@@ -4,3 +4,23 @@
     //since the header is not a square and we dont want a gap inbetween, me move the section up
     margin-top: -20vh;
 }
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+     url(../img/nat-4.jpg);
+     background-size: cover;
+
+     //so the background image is not a square
+     transform: skewY(-7deg);
+
+    margin-top: -10rem;
+
+    //selects all direct childs of section-feature (therefore the boxes inside will not be skewed)
+     & > * {
+        transform: skewY( 7deg);
+     }
+}
