@@ -1,5 +1,6 @@
 .btn {
     /* Link is the style of unvisited link */
+    &,
     &:link,
     &:visited {
         font-size: 1.6rem;
@@ -11,6 +12,10 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
+
+        //Change for the <button> element {
+        border: none;
+        cursor: pointer;
     }
 
     &:hover{
@@ -24,7 +29,9 @@
     }
 
     /* when button clicked */
-    &:active {
+    &:active, 
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
