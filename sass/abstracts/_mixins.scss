@@ -6,3 +6,10 @@
         clear: both; //important property cleares the float left and right
     }
 }
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
