@@ -11,6 +11,11 @@
         }
     }
 
+    @include respond(tab-port){
+        max-width: 50rem;
+        padding: 0 3rem;
+    }
+
     @include clearfix;
 
     //selecting elements by attribute (all that start with class which name starts with col-)
@@ -21,6 +26,7 @@
             margin-right: $gutter-horizontal;
             @include respond(tab-port) { 
                 margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
             }
         }
 
